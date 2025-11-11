@@ -1,21 +1,17 @@
 {
-  "name": "p2p-web",
-  "private": true,
+  "name": "p2p-backend",
   "version": "1.0.0",
-  "type": "module",
+  "main": "server.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "socket.io-client": "^4.7.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.0"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
   }
 }
